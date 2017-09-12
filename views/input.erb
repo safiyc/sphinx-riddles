@@ -1,0 +1,38 @@
+<h1><%= %></h1>
+<h1>Answer the riddles to enter the city!</h1>
+
+<form action="/output" method="post">
+  <p>I'm tall when I'm young and I'm short when I'm old. What am I?</p>
+  <div class="radio">
+    <label><input type="radio" value="incorrect" name="question1">A tree</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" value="incorrect" name="question1">A house</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" value="correct" name="question1">A candle</label>
+  </div>
+
+  <p>What gets wetter and wetter the more it dries?</p>
+  <div class="radio">
+    <label><input type="radio" value="incorrect" name="question2">A shirt</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" value="correct" name="question2">A towel</label>
+  </div>
+  <div class="radio disabled">
+    <label><input type="radio" value="incorrect" name="question2">The snow</label>
+  </div>
+
+  <p>Which weighs more, a pound of feathers or a pound of bricks?</p>
+  <div class="radio">
+    <label><input type="radio" value="incorrect" name="question3">A pound of feathers</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" value="incorrect" name="question3">A pound of bricks</label>
+  </div>
+  <div class="radio disabled">
+    <label><input type="radio" value="correct" name="question3">They weigh the same</label>
+  </div>
+  <button type="submit">Submit</button>
+</form>
